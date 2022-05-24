@@ -2,7 +2,7 @@ import joblib
 import pickle
 
 if 'google.colab' in str(get_ipython()):
-    model_dir = "alloyMg_Public/models"
+    model_dir = "alloyMg/models"
 else:
     model_dir = "models"
 
