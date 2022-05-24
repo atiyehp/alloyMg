@@ -21,9 +21,9 @@ def extractSettingsFromGUI(GUI_inputs, mode):
 
     return settings
 
-def generateModeSelectionGUI(mode = 'DoS'):
+def generateModeSelectionGUI(mode = 'Mechanical'):
     mode_dropdown = widgets.Dropdown(
-        options=['DoS', 'Mechanical'],
+        options=['Mechanical'],
         value=mode,
         description='<b>Select Mode:</b>',
         style={'description_width': 'initial'},
