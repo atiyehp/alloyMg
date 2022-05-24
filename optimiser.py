@@ -45,13 +45,13 @@ class scanSettings:
                 'heat treatment': [1]
             }
             self.categorical_inputs_info = {
-                'heat treatment': {'span': [1, 2, 3, 4, 5, 6], 'tag': ['Cast_Fast', 'Cast_HT', 
-                                                                    'Cast_Slow', 'ECAP', 'Extruded', 'Wrought']}}
+                'heat treatment': {'span': [1, 2, 3, 4, 5, 6], 'tag': ['Extruded', 'ECAP',
+                                                                       'Cast_Slow', 'Cast_Fast', 'Cast_HT', 'Wrought']}}
             
             self.range_based_inputs = dict.fromkeys(
-                ['Mg', 'Zn', 'Al', 'Mn', 'Nd', 'Ce', 'La', 'Zr', 'Cu', 'Si', 'Y', 'Ca',
-                'Pr', 'Ni', 'Be', 'Fe', 'Li', 'Gd', 'Th', 'Sn', 'Sb', 'Ag', 'Ga', 'Yb',
-                'Bi', 'Sc', 'Dy', 'Sr', 'Tb', 'Er', 'Ho'], [0])
+                ['Mg', 'Nd', 'Ce', 'La', 'Zn', 'Sn', 'Al', 'Ca', 'Zr', 'Ag', 'Ho', 'Mn',
+       'Y', 'Gd', 'Cu', 'Si', 'Li', 'Yb', 'Th', 'Sb', 'Pr', 'Ga', 'Be', 'Fe',
+       'Ni', 'Sc', 'Tb', 'Dy', 'Er', 'Sr', 'Bi'], [0])
 
 
         if self.mode == 'Mechanical':
@@ -65,12 +65,11 @@ class scanSettings:
                 'heat treatment': [1, 2, 4, 5]
             }
             self.categorical_inputs_info = {
-                'heat treatment': {'span': [1, 2, 3, 4, 5, 6], 'tag': ['Cast_Fast', 'Cast_HT', 
-                                                                    'Cast_Slow', 'ECAP', 'Extruded', 'Wrought']}}
+                'heat treatment': {'span': [1, 2, 3, 4, 5, 6], 'tag': ['Extruded', 'ECAP', 'Cast_Slow', 'Cast_Fast', 'Cast_HT', 'Wrought']}}
             self.range_based_inputs = dict.fromkeys(
-                ['Mg', 'Zn', 'Al', 'Mn', 'Nd', 'Ce', 'La', 'Zr', 'Cu', 'Si', 'Y', 'Ca',
-                'Pr', 'Ni', 'Be', 'Fe', 'Li', 'Gd', 'Th', 'Sn', 'Sb', 'Ag', 'Ga', 'Yb',
-                'Bi', 'Sc', 'Dy', 'Sr', 'Tb', 'Er', 'Ho', 'Cast_Fast'], [0])
+                ['Mg', 'Nd', 'Ce', 'La', 'Zn', 'Sn', 'Al', 'Ca', 'Zr', 'Ag', 'Ho', 'Mn',
+                 'Y', 'Gd', 'Cu', 'Si', 'Li', 'Yb', 'Th', 'Sb', 'Pr', 'Ga', 'Be', 'Fe',
+                 'Ni', 'Sc', 'Tb', 'Dy', 'Er', 'Sr', 'Bi'], [0])
 
 
 class optimiser:
