@@ -98,13 +98,13 @@ class optimiser:
     def printResults(self, best_datapoint):
         if self.mode == 'DoS':
             print('data point:',best_datapoint.formatForInput()) 
-            #print('Results in a predicted %f elongation' % (self.models['elongation'].predict(best_datapoint.formatForInput())[0]))
-            print('Results in a predicted %f yield' % (1.25*self.models['yield'].predict(best_datapoint.formatForInput())[0]))
-            #print('Results in a predicted %f tensile' % (1.25*self.models['tensile'].predict(best_datapoint.formatForInput())[0]))
+            #print('predicted %f elongation' % (self.models['elongation'].predict(best_datapoint.formatForInput())[0]))
+            print('predicted %f yield strength' % (1.25*self.models['yield'].predict(best_datapoint.formatForInput())[0]))
+            #print('predicted %f tensile strength' % (1.25*self.models['tensile'].predict(best_datapoint.formatForInput())[0]))
         elif self.mode == 'Mechanical':
-            #print('Results in a predicted %f elongation' % (self.models['elongation'].predict(best_datapoint.formatForInput())[0]))
-            print('Results in a predicted %f yield' % (1.25*self.models['yield'].predict(best_datapoint.formatForInput())[0]))
-            #print('Results in a predicted %f tensile' % (1.25*self.models['tensile'].predict(best_datapoint.formatForInput())[0]))
+            #print('predicted %f elongation' % (self.models['elongation'].predict(best_datapoint.formatForInput())[0]))
+            print('predicted %f yield strength' % (1.25*self.models['yield'].predict(best_datapoint.formatForInput())[0]))
+            #print('a predicted %f tensile strength' % (1.25*self.models['tensile'].predict(best_datapoint.formatForInput())[0]))
 
     def run(self):
         best_loss = None
