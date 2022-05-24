@@ -80,7 +80,7 @@ def generateMainGUI(mode):
     second_column = VBox([VBox(categorical_inputs_VBox, layout=BOTTOM_PADDING)])
     display(HBox([first_column, second_column]))
 
-    run_scan_button = widgets.Button(description="Run Optimiser")
+    run_scan_button = widgets.Button(description="Run Model")
     display(run_scan_button)
 
     def on_button_clicked(b):
